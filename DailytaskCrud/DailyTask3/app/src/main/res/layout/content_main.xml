@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FADF8"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:background="#E3DFDF"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteY="211dp"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="#ACA9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintVertical_bias="0.81"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recordatorio"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/dorde"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="2dp"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="615dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/calendario"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="616dp" />
+
+            <TextView
+                android:id="@+id/calendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Calendario"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="656dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/estadisticas"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/dorde"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="615dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/estadisticas"
+                tools:layout_editor_absoluteX="319dp"
+                tools:layout_editor_absoluteY="616dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mis estadisticas"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="272dp"
+                tools:layout_editor_absoluteY="656dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tareas"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/dorde"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="2dp"
+            android:scaleType="centerCrop">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/mistareas"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="616dp" />
+
+            <TextView
+                android:id="@+id/mistareas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mis tareas"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="654dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

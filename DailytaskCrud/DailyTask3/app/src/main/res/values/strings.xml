@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DailyTask3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">DailyTask</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //Menú
+    <string name="menu_home">home</string>
+    <string name="personalizar">Personalizar</string>
+    <string name="cuenta">Sincronización de las cuentas</string>
+    <string name="alarma">Tipo de alarma</string>
+    <string name="tema">Tema</string>
+    <string name="notificiones">Notificiones</string>
+    <string name="widget">Widget</string>
+    <string name="notificion">Notificaciones y recordatorio</string>
+    <string name="tono">Tono de llamada de tarea completada</string>
+
+    <string name="hora">Fecha-Hora</string>
+    <string name="dia">Primer día de la semana</string>
+    <string name="tiempo">Formato de tiempo</string>
+    <string name="fecha">Formato de fecha</string>
+    <string name="vencimiento">Fecha de vencimiento</string>
+
+    <string name="apariencia">Apariencia de la tarea perzonalizada</string>
+    <string name="rango">Orden de rango de tiempo</string>
+
+    <string name="info">Información</string>
+    <string name="ayuda">Ayudanos a traducir</string>
+    <string name="version">Versión: 1.0.0</string>
+    <string name="califica">Calificanos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

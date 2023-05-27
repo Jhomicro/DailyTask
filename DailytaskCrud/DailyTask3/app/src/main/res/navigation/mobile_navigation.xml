@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dailytask3.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/cuenta"
+        android:name="com.example.dailytask3.ui.gallery.GalleryFragment"
+        android:label="@string/cuenta"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/alarma"
+        android:name="com.example.dailytask3.ui.slideshow.SlideshowFragment"
+        android:label="@string/alarma"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/tema"
+        android:name="com.example.dailytask3.tema"
+        android:label="fragment_tema"
+        tools:layout="@layout/fragment_tema" />
+    <fragment
+        android:id="@+id/notificiones"
+        android:name="com.example.dailytask3.notificiones"
+        android:label="fragment_notificiones"
+        tools:layout="@layout/fragment_notificiones" />
+    <fragment
+        android:id="@+id/widget"
+        android:name="com.example.dailytask3.widget"
+        android:label="fragment_widget"
+        tools:layout="@layout/fragment_widget" />
+    <fragment
+        android:id="@+id/notificion"
+        android:name="com.example.dailytask3.notificion"
+        android:label="fragment_notificion"
+        tools:layout="@layout/fragment_notificion" />
+    <fragment
+        android:id="@+id/tono"
+        android:name="com.example.dailytask3.tono"
+        android:label="fragment_tono"
+        tools:layout="@layout/fragment_tono" />
+    <fragment
+        android:id="@+id/dia"
+        android:name="com.example.dailytask3.dia"
+        android:label="fragment_dia"
+        tools:layout="@layout/fragment_dia" />
+    <fragment
+        android:id="@+id/tiempo"
+        android:name="com.example.dailytask3.tiempo"
+        android:label="fragment_tiempo"
+        tools:layout="@layout/fragment_tiempo" />
+    <fragment
+        android:id="@+id/fecha"
+        android:name="com.example.dailytask3.fecha"
+        android:label="fragment_fecha"
+        tools:layout="@layout/fragment_fecha" />
+    <fragment
+        android:id="@+id/vencimiento"
+        android:name="com.example.dailytask3.vencimiento"
+        android:label="fragment_vencimiento"
+        tools:layout="@layout/fragment_vencimiento" />
+    <fragment
+        android:id="@+id/rango2"
+        android:name="com.example.dailytask3.rango"
+        android:label="fragment_rango"
+        tools:layout="@layout/fragment_rango" />
+    <fragment
+        android:id="@+id/ayuda"
+        android:name="com.example.dailytask3.ayuda"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+    <fragment
+        android:id="@+id/version"
+        android:name="com.example.dailytask3.version"
+        android:label="fragment_version"
+        tools:layout="@layout/fragment_version" />
+    <fragment
+        android:id="@+id/califica"
+        android:name="com.example.dailytask3.califica"
+        android:label="fragment_califica"
+        tools:layout="@layout/fragment_califica" />
+</navigation>

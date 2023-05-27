@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FADF8"
+    tools:context=".Notas">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Bretroceder"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/retrocerder"
+            tools:ignore="MissingConstraints" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/Bt_microfono"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/microfono" />
+
+        <ImageButton
+            android:id="@+id/Bt_agregar"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/nutarea" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D9D9D9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Todas"
+                android:layout_width="65dp"
+                android:layout_height="38dp"
+                android:background="@drawable/dorde"
+                android:gravity="center"
+                android:text="Todas"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/trabajo"
+                android:layout_width="79dp"
+                android:layout_height="38dp"
+                android:background="@drawable/dorde"
+                android:gravity="center"
+                android:text="Trabajo"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/escuela"
+                android:layout_width="78dp"
+                android:layout_height="38dp"
+                android:background="@drawable/dorde"
+                android:gravity="center"
+                android:text="Escuela"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/personal"
+                android:layout_width="93dp"
+                android:layout_height="38dp"
+                android:background="@drawable/dorde"
+                android:gravity="center"
+                android:text="Personal"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ldeseos"
+                android:layout_width="147dp"
+                android:layout_height="38dp"
+                android:background="@drawable/dorde"
+                android:gravity="center"
+                android:text="Lista de deseos"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/cumpleaños"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:background="@drawable/dorde"
+                android:gravity="center"
+                android:text="Cumpleaños"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/recordatorios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ACA9A9"
+        android:text="Recordatorios"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="413dp"
+        android:layout_height="556dp"
+        android:background="#ACA9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/dorde"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="2dp"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="615dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/calendario"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="616dp" />
+
+            <TextView
+                android:id="@+id/calendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Calendario"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="656dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/estadisticas"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/dorde"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="615dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/estadisticas"
+                tools:layout_editor_absoluteX="319dp"
+                tools:layout_editor_absoluteY="616dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mis estadisticas"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="272dp"
+                tools:layout_editor_absoluteY="656dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tareas"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="@drawable/dorde"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="2dp"
+            android:scaleType="centerCrop">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/mistareas"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="616dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mis tareas"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="654dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

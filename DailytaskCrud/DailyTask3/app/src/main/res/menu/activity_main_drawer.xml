@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/Personalizar">
+        <item
+            android:id="@+id/cuenta"
+            android:title="@string/cuenta" />
+
+        <item
+            android:id="@+id/alarma"
+            android:title="@string/alarma" />
+        <item
+            android:id="@+id/tema"
+            android:title="@string/tema" />
+        <item
+            android:id="@+id/notificiones"
+            android:title="@string/notificiones" />
+        <item
+            android:id="@+id/widget"
+            android:title="@string/widget" />
+        <item
+            android:id="@+id/notificion"
+            android:title="@string/notificion" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/apariencia">
+        <item
+            android:id="@+id/rango"
+            android:title="@string/rango" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/info">
+        <item
+            android:id="@+id/ayuda"
+            android:title="@string/ayuda" />
+
+        <item
+            android:id="@+id/version"
+            android:title="@string/version" />
+        <item
+            android:id="@+id/califica"
+            android:title="@string/califica" />
+    </group>
+</menu>
